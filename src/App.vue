@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import {RouterLink, RouterView} from 'vue-router'
-import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
-
 </script>
 
 <template>
@@ -11,9 +9,9 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
       <nav>
         <!--        <RouterLink to="/">Home</RouterLink>-->
         <!--        <RouterLink to="/about">About</RouterLink>-->
-        <RouterLink to="/">Dashboard</RouterLink>
-        <RouterLink to="/habits">Habits</RouterLink>
-        <RouterLink to="/addhabit"><font-awesome-icon icon=”phone” />Add Habit</RouterLink>
+        <RouterLink to="/"><font-awesome-icon icon="fa-solid fa-grip" /> Dashboard</RouterLink>
+        <RouterLink to="/habits"><font-awesome-icon icon="fa-solid fa-pencil" /> Habits</RouterLink>
+        <RouterLink to="/addhabit">Add Habit</RouterLink>
       </nav>
     </div>
   </header>
