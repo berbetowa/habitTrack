@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {RouterLink, RouterView} from 'vue-router'
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 
 </script>
 
@@ -11,7 +12,8 @@ import {RouterLink, RouterView} from 'vue-router'
         <!--        <RouterLink to="/">Home</RouterLink>-->
         <!--        <RouterLink to="/about">About</RouterLink>-->
         <RouterLink to="/">Dashboard</RouterLink>
-        <RouterLink to="/addhabit">Add Habit</RouterLink>
+        <RouterLink to="/habits">Habits</RouterLink>
+        <RouterLink to="/addhabit"><font-awesome-icon icon=”phone” />Add Habit</RouterLink>
       </nav>
     </div>
   </header>
@@ -23,7 +25,7 @@ import {RouterLink, RouterView} from 'vue-router'
 header {
   background: var(--color-background-nav);
   line-height: 1.5;
-  max-height: 100vh;
+  height: 100vh;
   padding: 0 1.5rem;
 }
 
