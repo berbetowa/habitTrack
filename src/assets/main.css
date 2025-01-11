@@ -1,9 +1,8 @@
 @import './base.css';
 
 #app {
-  max-width: 100%;
-  margin: 0 auto;
-  font-weight: normal;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
 }
 
 a,
@@ -24,10 +23,5 @@ a,
   body {
     display: flex;
     place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
   }
 }

@@ -8,15 +8,15 @@ import router from './router'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {faGrip, faPencil} from '@fortawesome/free-solid-svg-icons'
+import {faGrip, faHourglassHalf, faPenToSquare, faPlus, faSquarePlus, faPencil, faXmark, faFloppyDisk} from '@fortawesome/free-solid-svg-icons'
 
 
 /* add icons to the library */
-library.add(faGrip, faPencil)
+library.add(faGrip, faHourglassHalf, faPenToSquare, faPlus, faSquarePlus, faPencil, faXmark, faFloppyDisk)
 
 const app = createApp(App)
 
-app.component('font-awesome-icon', FontAwesomeIcon)
+app.component('font-awesome-icon', FontAwesomeIcon);
 app.use(createPinia())
 app.use(router)
 
