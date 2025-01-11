@@ -4,14 +4,21 @@ import {RouterLink, RouterView} from 'vue-router'
 
 <template>
   <header>
-    <div class="wrapper">
+    <div class="app_wrapper">
       <img alt="Vue logo" class="logo" src="@/assets/images/logo.jpeg" width="125" height="125"/>
       <nav>
-        <!--        <RouterLink to="/">Home</RouterLink>-->
-        <!--        <RouterLink to="/about">About</RouterLink>-->
-        <RouterLink to="/"><font-awesome-icon icon="fa-solid fa-grip" /> Dashboard</RouterLink>
-        <RouterLink to="/habits"><font-awesome-icon icon="fa-solid fa-pencil" /> Habits</RouterLink>
-        <RouterLink to="/addhabit">Add Habit</RouterLink>
+        <RouterLink to="/">
+          <font-awesome-icon icon="fa-solid fa-grip"/>
+          Dashboard
+        </RouterLink>
+        <RouterLink to="/habits">
+          <font-awesome-icon icon="fa-solid fa-hourglass-half"/>
+         My Habits
+        </RouterLink>
+        <RouterLink to="/dailyplan">
+          <font-awesome-icon icon="fa-solid fa-pen-to-square"/>
+          Daily Plan
+        </RouterLink>
       </nav>
     </div>
   </header>
@@ -25,6 +32,7 @@ header {
   line-height: 1.5;
   height: 100vh;
   padding: 0 1.5rem;
+  min-width: 250px;
 }
 
 .logo {
@@ -46,10 +54,12 @@ nav a {
   display: block;
   color: var(--color-text);
   background: var(--color-background-soft);
+  font-size: 16px;
+  text-align: revert;
   border-radius: 10px;
   padding: 0.5rem;
   width: 100%;
-  margin: 0.7rem;
+  margin: 0.7rem 0;
 }
 
 nav a.router-link-exact-active {
